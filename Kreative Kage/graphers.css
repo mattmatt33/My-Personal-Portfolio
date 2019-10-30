@@ -1,0 +1,63 @@
+.bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.bio-text {
+    
+    width: 500px;
+    line-height: 1.6rem;
+    margin: 50px;
+}
+
+.pic-contain {
+    
+    background: #3d3d3d;
+    width: 510px;
+    height: 500px;
+    margin: 50px;
+}
+
+.bio-pic img {
+    width: 490px;
+    height: 450px;
+    margin: 20px 10px 10px 10px;
+}
+
+@media (max-width: 1000px ) {
+    .bio {
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+}
+
+@media (max-width: 568px ) {
+    .bio-text {
+        width: 350px;
+    }
+
+    .pic-contain {
+        width: 350px;
+        height: 400px;
+        padding-left: 5px;
+        
+    }
+
+    .bio-pic img {
+        width: 320px;
+        height: 350px;
+    }
+
+    .container {
+        width: 85%;
+        
+    }
+}
+
+@media (min-width: 800px) {
+    .bio {
+        margin-left: 100px;
+    }
+}

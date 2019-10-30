@@ -1,0 +1,67 @@
+:root {
+    --mainColor: #e2daca;
+    --secColor: #cbcccc;
+}
+
+.bio-card {
+    display: block;
+}
+
+.bio-card h1 {
+    text-align: center;
+}
+
+.photos {
+    width: 250px;
+    height: 250px;
+}
+
+.ph-logo img {
+    width: 250px;
+    height: 100px;
+    
+}
+
+.photographers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bio-card {
+    margin: 30px;
+    padding: 30px;
+}
+
+.email-box {
+    background-color: #fff;
+    width: 450px;
+    height: 175px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    border: 1px solid #333;
+}
+
+.email-box h3 {
+    text-align: center;
+}
+
+.email-box .txt-area {
+    background-color: var(--mainColor);
+    padding: 5px;
+    margin: 15px 0;
+    font-size: 20px;
+    width: 300px;
+    margin-left: 55px;
+}
+
+.email-box .join-btn {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--mainColor);
+    margin-left: 110px;
+    font-size: 25px;
+}
