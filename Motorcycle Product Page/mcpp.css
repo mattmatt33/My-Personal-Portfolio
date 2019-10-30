@@ -1,0 +1,164 @@
+:root {
+    --blue: #0f90f5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.mc {
+    width: 450px;
+}
+
+body {
+    background-image: url(img/b&w.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    max-height: 100%;
+    
+}
+
+ul li, a {
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+
+.modal {
+    position: relative;
+    background: #fff;
+    width: 1000px;
+    height: 600px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    opacity: .85;
+}
+.menubtn {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px 0 0 0;
+    background-color: #b6c917;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    text-align: center;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: var(--blue);
+    width: 380px;
+    height: 60px;
+    border-radius: 0 0 10px 0;
+    visibility: hidden;
+}
+
+.nav a {
+    margin: auto;
+    text-align: center;
+}
+
+.sides {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.side1 {
+    margin-left: 50px;
+}
+
+.side1-list {
+    margin-bottom: 50px;
+}
+
+.side1 p {
+    width: 400px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+.side1-list {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5px;
+} 
+
+.side1-list:hover {
+    text-decoration: #b6c917;
+    color: #b6c917;
+}
+
+.side1 h1:first-child {
+    text-align: center;
+}
+.side1 h1 {
+    font-size: 30px;
+    color: #b6c917;
+}
+
+.side1 h2 {
+    margin-bottom: 15px;
+    color: #b6c917;
+}
+
+.side1 button{
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--blue);
+}
+
+.dots button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    margin-left: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.dots .one {
+    width: 10px;
+    height: 10px;
+}
+
+.dots .two {
+    width: 12px;
+    height: 12px;
+}
+
+.dots .three {
+    width: 14px;
+    height: 14px;
+}
+
+.dots .four {
+    width: 16px;
+    height: 16px;
+}
+
+.dots .five {
+    width: 18px;
+    height: 18px;
+}
+
+
+.copy {
+    margin-top: 70px;
+    margin-left: 230px;
+}
