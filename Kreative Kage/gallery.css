@@ -3,9 +3,7 @@
     --secColor: #cbcccc;
 }
 
-.gallery-header {
 
-}
 
 .gallery-header h1 {
     text-align: center;
@@ -31,25 +29,76 @@
 .pic-cat {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 50px;
+    margin-left: 75px;
+    grid-template-areas: 
+    "p1 p2 p3"
+    "p4 . p5"
+    ;
 }
 
 .pic-card  {
     margin: 50px 0 50px 0;
 }
 
-.p2, .p2 h1 {
-    margin-left: -20px;
+.p1 {
+    grid-area: p1;
 }
 
+.p2 {
+    grid-area: p2;
+}
+
+
+.p3 {
+    grid-area: p3;
+}
+
+
+.p4 {
+    grid-area: p4;
+}
+
+
+.p5 {
+    grid-area: p5;
+}
+
+
+/* .p2, .p2 h1 {
+    margin-left: -20px;
+} 
 .p4, .p4 h1 {
     margin-left: 80px;
-}
-
+} 
 .p5, .p5 h1 {
     grid-column: 3/4;
-    margin-left: -70px;
-    
+    margin-left: -70px; 
+} */
 
+@media (max-width: 1024px) {
+    .pic-cat {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "p1 p2"
+        "p3 p4"
+        "p5 .";
+    }
+    
 }
 
+@media (max-width: 700px ) {
+    .pic-cat {
+        display: block;
+        margin-left: 190px;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 520px ) {
+    .pic-cat {
+        display: block;
+        margin-left: 100px;
+        padding-top: 20px;
+    }
+}

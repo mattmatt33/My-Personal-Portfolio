@@ -12,7 +12,7 @@
 
 /* ----- Header Start ----- */
 
-header {
+header  {
     position: relative;
     display: flex;
     width: 100%;
@@ -22,6 +22,10 @@ header {
 
 .main-logo {
     max-width: 55%;
+    position: absolute;
+    height: 130px;
+    
+    
 }
 
 .nav-list {
@@ -108,13 +112,26 @@ header {
 
 .copyright {
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
 /* ----- Footer End----- */
 
 
+/* ----Media Queries Start ----*/
 
+@media (max-width: 1024px) {
+    .container {
+      display: block;
+      margin: auto;
+      margin-top: 40px;
+    }
+  }
 
+ 
+  
+  /* ----Media Queries end ----*/
 
 

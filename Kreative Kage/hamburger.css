@@ -88,18 +88,27 @@
 @media (max-width: 900px) {
     .nav-list {
         display: block; 
-        margin-top: 70px;
+        margin-top: 50px;
         margin-left: 63%;
+        font-weight: bold;
+        z-index: 9;
         visibility: hidden;
+        
+    }
+
+    .nav-list .sub-menu:hover {
+        
+        padding-left: 100px;
+    } 
+
+    .menu-wrap.checked > .nav-list {
+        visibility: visible;
     }
 
     .menu-wrap {
         visibility: visible;
     }
 
-    .menu-wrap .toggler:checked ~ .nav-list {
-        visibility: visible;
-    }
 
      .main-logo {
         max-width: 100%;

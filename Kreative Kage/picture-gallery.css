@@ -14,9 +14,28 @@
     width: 100%;
     min-height: 100%;
     border-radius: 5px;
-    height: 200px;
+    height: 250px;
 }
 
 .soc-med {
     margin-top: 100px;
 }
+/* ----Media Queries Start ----*/
+
+@media (max-width: 600px) {
+    .container {
+      display: block;
+      margin: auto;
+      margin-top: 40px;
+    }
+    .pic-contain {
+        display: block;
+    }
+
+    .contain h1 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+  }
+
+  /* ----Media Queries end ----*/

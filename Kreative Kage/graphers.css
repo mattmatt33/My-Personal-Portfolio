@@ -25,13 +25,14 @@
     margin: 20px 10px 10px 10px;
 }
 
-@media (max-width: 1000px ) {
+@media (max-width: 1024px ) {
     .bio {
         flex-direction: column;
         flex-wrap: wrap;
         margin: auto;
     }
 }
+    
 
 @media (max-width: 568px ) {
     .bio-text {
