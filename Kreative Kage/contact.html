@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kreative Kage</title>
     <link rel="stylesheet" href="theme.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="contact.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
     
 </head>
@@ -15,7 +16,13 @@
             
                 <a href="home.html"> <img src="../imgs/logo.jpg" alt="Kreative Kage Logo" class="main-logo"> </a>
             
-
+                <div class="menu-wrap">
+                    <input type="checkbox" class="toggler">
+                        <div class="hamburger">
+                            <div></div>
+                        </div>
+                    </div>
+                    
                 <ul class="nav-list"> 
                         <a href="home.html"><li>Home</li></a>
                         <a href="gallery.html"><li>Gallery
@@ -23,7 +30,7 @@
                             <ul class="sub-menu">
                                 <a href="weddings.html"><li>Weddings</li></a>
                                 <a href="maternity.html"><li>Maternity</li></a>
-                                <a href="seniors.html"><li>Seniors</li></a>
+                                <a href="seniors.html"><li>Graduates</li></a>
                                 <a href="babies.html"><li>New Borns</li></a>
                                 <a href="family.html"><li>Family</li></a>
                             </ul>
@@ -42,12 +49,53 @@
         </header>
 
     <div class="container">
+        <div class="contain">
 
-        <h1>Contact Us</h1>
+        <div class="title"><h1>Have any questions, <br>just ask.</h1></div>
 
-    
-    
+        <div class="contact">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, delectus quibusdam, eligendi sit eveniet omnis veniam accusamus, beatae expedita similique labore laborum recusandae mollitia repellendus facere quos eaque? At, nisi!</p>
+
+            <h3>Need help?</h3>
+            <h2>Email@gmail.com</h2>
+            <br><br>
+            <h3>Need to talk?</h3>
+            <h2>216-123-4567</h2>
+        </div>
+
+        <form action="" method="POST">
+        <div class="form">
+            <input type="text" placeholder="Name:">
+            <input type="email" placeholder="Email:">
+            <textarea placeholder="Project Description:" rows="10" cols="30"></textarea>
+            <button class="btn"> Send </button>
+        </div>
+        </form>
+        </div>
         
+
+        <div id="map"></div>
+        
+        <script>
+                // Initialize and add the map
+                function initMap() {
+                  // The location of Kreative Kage Studios
+                  var cleve = {lat: 41.552330, lng: -81.559930};
+                  // The map, 17325 Euclid Ave, Cleveland Ohio
+                  var map = new google.maps.Map(
+                      document.getElementById('map'), {zoom: 15
+                      , center: cleve});
+                  // The marker, positioned at reative Kage Studios
+                  var marker = new google.maps.Marker({position: cleve, map: map});
+                }
+                    </script>
+                    <!--Load the API from the specified URL
+                    * The async attribute allows the browser to render the page while the API loads
+                    * The key parameter will contain your own API key (which is not needed for this tutorial)
+                    * The callback parameter executes the initMap() function
+                    -->
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA8YdnbcCTfzs_DKXJ03BnPFBehJy9mCU&callback=initMap" type="text/javascript">
+                    </script>
 
 
 
@@ -77,6 +125,6 @@
             
         </footer>
     </div>
-    <h3 class="copyright">&copy; 2019 Kreative Kage</h3>
+    <h3 class="copyright">&copy; 2020 Kreative Kage</h3>
 </body>
 </html>
