@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kreative Kage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="theme.css">
     <link rel="stylesheet" href="hamburger.css">
-    <link rel="stylesheet" href="graphers.css">
+    <link rel="stylesheet" href="picture-gallery.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
     
 </head>
@@ -49,48 +50,35 @@
         </header>
 
     <div class="container">
-       <div class="bio">
-            <div class="bio-text">
-                <h1>Dave Kage</h1><br><br>
-        
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, provident.</p><br>
+       <div class="pic-contain">
+        <!-- Pic Gallery Start -->
+        <img data-enlargable src="imgs/family/blake-barlow-HfmCBvb_NEU-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/family/caroline-hernandez-TMpQ5R9mbOc-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/family/conner-baker-M5Zix_4Jc4k-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/family/eye-for-ebony-zQQ6Y5_RtHE-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/family/irina-murza-vENEN2cryYQ-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/family/jessica-rockowitz-jbiInQGY8og-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/family/john-mark-smith-9QTQFihyles-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/family/jove-duero-kf3dLxBql6U-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/family/jude-beck-YErQe8LQkyA-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/family/kevin-delvecchio-7noZJ_4nhU8-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/family/mike-scheid-0iqkntLw93A-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/family/sharon-mccutcheon-Z_t6gnbLmXA-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/family/allen-taylor-0cmJRW5rOJ8-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/family/ann-danilina-c_rnPbSYVFM-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/family/ashwini-chaudhary-GmDVGjqeVEk-unsplash.jpg" alt="">
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eligendi molestiae totam fugit necessitatibus incidunt excepturi provident debitis, accusantium quis ratione consequuntur unde similique soluta, vitae sed dignissimos illo! Quaerat.</p><br>
+        <!-- Pic Gallery End -->
+    </div>
+    
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, qui commodi. Aperiam, quibusdam odio beatae, aliquam quae earum maiores perferendis, sit eveniet hic eligendi. Repellendus officiis at autem ipsum. Adipisci.</p>
-            </div>
 
-            <div class="pic-contain">
-                <div class="bio-pic">
-                    <img src="imgs/dave.JPG" alt="Jordan Kage">
 
-                </div>
 
-            </div>
-        </div>
-       
             
-    
-
-    
-    
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            
+ 
 
         
         <footer class="footer">
@@ -104,5 +92,26 @@
         </footer>
     </div>
     <h3 class="copyright">&copy; 2020 Kreative Kage</h3>
+
+    <script>
+        // View Pics full screen when clicked
+        $('img[data-enlargable]').addClass('img-enlargable').click(function(){
+    var src = $(this).attr('src');
+    $('<div>').css({
+        background: 'RGBA(0,0,0,.5) url('+src+') no-repeat center',
+        backgroundSize: 'contain',
+        width:'100%', height:'100%',
+        position:'fixed',
+        zIndex:'10000',
+        top:'0', left:'0',
+        cursor: 'zoom-out'
+    }).click(function(){
+        $(this).remove();
+    }).appendTo('body');
+}); 
+    // End
+    </script>
+
+
 </body>
 </html>

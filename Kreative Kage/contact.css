@@ -1,0 +1,103 @@
+.title {
+    grid-area: title;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.form {
+    grid-area: form;
+}
+
+
+.contain {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 200px;
+     grid-gap: 20px;
+     grid-template-areas: 
+     "title ."
+     "contact form";
+}
+/* ----Grid Layout end ----*/
+
+
+/* ----Form start ----*/
+
+.form {
+    display: grid;
+    margin-top: 50px;
+}
+
+.form input {
+    width: 450px;
+    height: 35px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.form textarea {
+    width: 450px;
+    height: 200px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.form .btn {
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+/* ----Form end ----*/
+
+/* ----Contact start ----*/
+
+.title {
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.title, .contact {
+    margin-left: 20px;
+}
+
+.contact h3 {
+    margin-top: 30px;
+}
+
+/* ----Contact end ----*/
+
+/* ----Google Map Start ----*/
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+
+/* ----Google Map end ----*/
+
+/* ----Media Queries Start ----*/
+
+@media (max-width: 1024px) {
+    .container {
+      display: block;
+      margin: auto;
+    }
+    .contain {
+        display: block;
+    }
+
+    .contain h1 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+  }
+
+  /* ----Media Queries end ----*/
