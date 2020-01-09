@@ -611,6 +611,20 @@ textarea.form-control {
 	background: #222;
 	color: #fff;
 }
+
+.code.active{
+	background: #f5f5f5;
+	color: #222;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.code.active:hover {
+	background: #222;
+	color: #f5f5f5;
+}
+
 /* ---------------------------------------------- */
 /* Grid and portfolio items
 /* ---------------------------------------------- */
