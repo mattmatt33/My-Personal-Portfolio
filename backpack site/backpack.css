@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 105px;
+    font-size: 11px;
+    background-color: #fff;
+    height: 200px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    border-bottom: 2px solid lightblue;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    list-style: none;
+}
+
+.mid {
+    background-color: skyblue;
+    height: 200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.btn {
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.headline {
+    margin-left: 100px;
+    padding-top: 7px;
+}
+
+.headline h1 {
+    font-size: 25px;
+    margin-top: 50px;
+    width: 280px;
+}
+
+.soc-med {
+    height: 20px;
+    width: 20px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 50px;
+    grid-gap: 30px;
+    margin-left: 200px;
+}
+
+.pic img {
+    margin-top: -92px;
+    margin-left: 30px;
+}
+
+.packs {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+}
+
+.backpacks {
+    margin-bottom: 50px;
+}
+
+.backpacks h1 {
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    
+}
+
+.packs h2 {
+   margin-left: 105px;
+   font-size: 16px;
+   margin-bottom: -20px;
+}
+
+.packs h3 {
+    margin-left: 85px;
+    font-size: 13px;
+    margin-top: -20px;
+    
+ }
+
+ .backpacks .fas {
+     margin-top: 100px;
+ }
+
+ .fa-chevron-left {
+     margin-left: 20px;
+ }
+
+ footer {
+     background-color: skyblue;
+     width: 100%;
+     height: 100px;
+     text-align: center;
+ }
+
+ .foot {
+    padding-top: 50px;
+    color: #555;
+    font-style: italic;
+ }
+
+ @media (max-width: 1024px) {
+
+    .nav li {
+        padding-right: 15px;
+    }
+
+    .cart li {
+        padding-right: 55px;
+        margin-left: -40px ;
+    }
+
+    .headline h1 {
+        font-size: 16px;
+        width: 180px;
+    }
+
+    .headline {
+        margin-left: 5px;
+    }
+
+    .mid .pic {
+        margin-left: -90px;
+    }
+
+    .mid .soc-med {
+       margin-left: -10px;
+    }
+
+    .packs {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 100px;
+    }
+
+    span h2 {
+        margin-top: 50px;
+    }
+
+    .fa-chevron-left,
+    .fa-chevron-right {
+        visibility: hidden;
+    }
+ }
