@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+body {
+    background-color: #f4f4f4;
+    margin-bottom: 50px;
+}
+
+table {
+    margin: auto;
+    width: 800px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px 0 15px 0;
+    width: 800px;
+    margin: auto;
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+.gblogo {
+    width: 190px;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    list-style: none;
+}
+
+.background {
+     background: url(gb-background.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     width: 800px;
+     height: 600px;
+}
+
+.gif {
+    width: 800px;
+   
+}
+
+.sect-one-heading {
+    margin-top: -350px;
+}
+
+.sect-one-heading h1 {
+    color: #00606a
+}
+
+.sect-one-heading h1:nth-child(1) {
+    font-size: 60px;
+    font-family: cursive;
+    font-weight: 300;
+}
+
+.sect-one-heading h1:nth-child(2) {
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.sect-one-heading h2 {
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.sect-two {
+    background-color: #abdde3;
+    width: 800px;
+    height: 200px;  
+}
+
+.sect-two-two {
+    background-color: #abdde3;
+    width: 800px;
+    height: 200px; 
+}
+
+.sect-two h2 {
+    font-size: 43px;
+    margin-top: -20px;
+}
+
+.sect-two a {
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+.sect-two h1 {
+    color: #1f8e9a;
+    font-size: 50px;
+}
+
+.sect-three {
+    background-color: #d5eef1;
+    margin-top: 100px;
+    width: 800px;
+}
+
+.sect-three h2 {
+    margin-top: -50px;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.sect-three-heading {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 20px;
+}
+
+.sect-three-heading h3 {
+   font-weight: 100;
+   padding-top: 15px;
+}
+
+.sect-three-two {
+    background-color: #d5eef1;
+    width: 800px;
+    height: 200px; 
+}
+
+.sect-three-heading h1,
+.sect-four-heading h1 {
+    color: #1f8e9a;
+}
+
+.sect-four {
+    background-color: #abdde3;
+    width: 800px;
+}
+
+.sect-four h2 {
+    margin-top: -50px;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.sect-four-two {
+    background-color: #abdde3;
+    width: 800px;
+    height: 250px; 
+}
+
+.sect-four-heading {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 20px;
+}
+
+.sect-four-heading h3 {
+    font-weight: 100;
+    padding-top: 15px;
+ }
+
+.sect-five {
+    background-color: #0b292d;
+    color: #fff;
+    width: 800px;
+    height: 400px;
+}
+
+.sect-five h1 {
+    margin-top: -10px;
+    font-size: 50px;
+}
+
+.sect-five p {
+    font-size: 30px;
+    margin-top: 50px;
+    font-weight: 300;
+}
+
+.btn {
+    background-color: #d94b2b;
+    color: #fff;
+    font-weight: 800;
+    font-size: 25px;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 70px
+}
+
+.policy {
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.policy p {
+    font-size: 12px;
+    line-height: 1.1rem;
+}
+
+.policy-links {
+    margin-top: 50px;
+}
+
+.policy-links a {
+    margin-left: 20px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.soc {
+    background-color: #dbdada;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    margin-top: -200px;
+    color: #666;
+}
+
+.soc a {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.soc h4 {
+    font-weight: 100;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    width: 70px;
+    height: 70px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+.icons a {
+    margin-top: 20px;
+}
+
+    
+
+.download {
+    margin-left: 220px;
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+
+
+.soc-links {
+    margin-left: 80px;
+    margin-top: 45px;  
+}
+
+.soc-links a {
+    color: #666;
+    font-weight: 100;
+}
+
+/* ---------MEDIA QUERY---------- */
+
+@media (max-width: 900px) {
+    table, tr, th {
+        width: 600px;
+        margin: auto;
+    }
+
+    .background {
+        width: 600px;
+        margin: auto;
+    }
+
+    .gif {
+        width: 600px;
+    }
+
+    .top {
+        width: 600px;
+    }
+
+    .logo {
+        margin: auto;
+    }
+
+    .policy {
+        width: 500px;
+    }
+
+    .policy-links {
+        width: 600px;
+        font-size: 10px;
+    }
+
+    .soc {
+        width: 600px;
+    }
+
+    .icons {
+        margin-left: 10px;
+    }
+
+    .download {
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+
+    .soc h4 {
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .soc-links {
+        font-size: 10px;
+    }
+}
